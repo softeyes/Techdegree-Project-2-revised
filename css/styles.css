@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    margin: 0 10%;
+    background-color: lightgray;
+}
+
+/* ================================= 
+  Mobile Version
+==================================== */
+
+/* NAV MENU */
+
+.main-header {
+    text-align: center;
+    display: block;
+}
+
+.main-nav {
+    padding: 0;
+    height: 38px;
+    line-height: 38px;
+    font-size: 20px;
+    display: block;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+.main-nav li {
+    background-color: tomato;
+    margin: 5px;
+}
+
+.profile img {
+    border-radius: 50%;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+.profile h2 {
+    display: block;
+    text-align: center;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    background-color: white;
+    display: block;
+}
+
+.portfolio h1 {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.col img {
+    width: 100%;
+    height: 100%;
+}
+
+.col {
+    width: 100%;
+    display: inline-block;
+    padding: 2.5%;
+    vertical-align: top;
+    text-align: center;
+}
+
+/* SOUNDS */
+
+iframe {
+    width: 300px;
+    padding-bottom: 1em;
+    border: none;
+}
+
+.sounds {
+    text-align: center;
+}
+
+.sounds-title {
+    font-family: 'Gaegu', cursive;
+    text-align: center;
+}
+
+.songs {
+    background-color: darkslategray;
+}
+
+.song-1 {
+    padding-top: 1em;
+}
+
+/* CONTACT */
+
+.contact {
+    width: 100%;
+    text-align: center;
+}
+
+.contact h3 {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+/* FOOTER */
+
+.footer-nav {
+    display: none;
+}
+
+.footer .name {
+    display: inline-block;
+    width: 30%
+}
+
+.back-to-top {
+    display: inline-block;
+    width: 70%;
+    text-align: right;
+    float: right;
+    margin: 19.92px 0;
+    font-size: 20px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 768px) {
+    /* HEADER MENU */
+    .name {
+        display: block;
+        text-align: center;
+    }
+    .main-nav {
+        margin-top: 0;
+    }
+    .main-nav li {
+        margin-right: 10px;
+        display: inline-block;
+        background-color: transparent;
+    }
+    /* PROFILE */
+    .profile {
+        display: inline-block;
+    }
+    .profile img {
+        width: 25%;
+        float: right;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+    .profile h2 {
+        float: left;
+        width: 70%;
+        text-align: left;
+    }
+    /* PORTFOLIO */
+    .portfolio {
+        text-align: center;
+    }
+    .col {
+        width: 48%;
+    }
+    /* SOUNDS */
+    iframe {
+        width: 600px;
+    }
+    /* CONTACT */
+    .contact {
+        text-align: center;
+        width: 50%;
+        margin: 5% 25%;
+    }
+    /* FOOTER */
+    .name,
+    .footer-nav li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .footer h2 {
+        text-align: left;
+    }
+    .footer-nav {
+        float: right;
+        display: inline-block;
+        font-size: 20px;
+        padding-left: 0;
+    }
+    .footer-nav li {
+        margin-right: 10px;
+        display: inline-block;
+    }
+    .back-to-top {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* HEADER MENU */
+    .name,
+    .main-nav li {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 38px;
+    }
+    .main-header {
+        text-align: left;
+    }
+    .main-nav {
+        float: right;
+        line-height: 38px;
+        font-size: 20px;
+        margin-top: 19.92px;
+        margin-bottom: 19.92px;
+    }
+    .main-nav li {
+        margin: 0 10px 0 0;
+        background-color: transparent;
+    }
+    .col {
+        width: 33%;
+    }
+    /* SOUNDS */
+    iframe {
+        width: 800px;
+    }
+}
